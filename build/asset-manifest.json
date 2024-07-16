@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.41ce40ee.css",
+    "main.js": "/static/js/main.1da927f0.js",
+    "static/media/cat-1.png": "/static/media/cat-1.4739fccc1ae3218c09e2.png",
+    "static/media/banner-img.jpeg": "/static/media/banner-img.31dd666ecdcd5e7a4731.jpeg",
+    "static/media/newsletter-bg.jpeg": "/static/media/newsletter-bg.b6f22313149bdbb35069.jpeg",
+    "static/media/cat-2.jpg": "/static/media/cat-2.2b552820cbedbd12ed2e.jpg",
+    "static/media/shopping.webp": "/static/media/shopping.82dd13b6f84b7431d3e3.webp",
+    "static/media/DC-prod-6.webp": "/static/media/DC-prod-6.986b05f6c9cd13c3bd85.webp",
+    "static/media/7.5kW-prod-3.webp": "/static/media/7.5kW-prod-3.b6f136db1a912459b917.webp",
+    "static/media/3.3kW-prod-7.webp": "/static/media/3.3kW-prod-7.116abb954461d16cac36.webp",
+    "static/media/7.5kW-prod-8.webp": "/static/media/7.5kW-prod-8.18c5bd4b9e91beffcd5a.webp",
+    "static/media/7.5kW-prod-1.webp": "/static/media/7.5kW-prod-1.9e0ab80061df80336d70.webp",
+    "static/media/31yIRZZnBsL._SX300_SY300_QL70_FMwebp_.webp": "/static/media/31yIRZZnBsL._SX300_SY300_QL70_FMwebp_.69600bb279ca45f23d60.webp",
+    "static/media/7.5kW-prod-2.webp": "/static/media/7.5kW-prod-2.88b50d9619f41fa95450.webp",
+    "index.html": "/index.html",
+    "main.41ce40ee.css.map": "/static/css/main.41ce40ee.css.map",
+    "main.1da927f0.js.map": "/static/js/main.1da927f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41ce40ee.css",
+    "static/js/main.1da927f0.js"
+  ]
+}
