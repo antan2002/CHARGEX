@@ -1,0 +1,138 @@
+@import "../../../css-config/mixins.scss";
+
+.search-content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: white;
+    animation: searchwindow 0.5s ease forwards;
+    transform: translate(100%);
+
+    .form-field {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 50px;
+        border-bottom: 1px solid rgba(46, 78, 161, 0.1);
+        position: relative;
+
+        @include md {
+            padding: 20px 0;
+        }
+
+        input {
+            width: 100%;
+            max-width: 1200px;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.942);
+            background-color: white;
+            outline: none;
+            border: none;
+            text-transform: uppercase;
+
+            @include md {
+                font-size: 48px;
+                height: 80px;
+            }
+        }
+
+        svg {
+            font-size: 20px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+
+            @include md {
+                font-size: 30px;
+                right: 40px;
+            }
+        }
+    }
+
+    .search-result {
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+
+        @include md {
+            max-width: 800px;
+        }
+
+        .results {
+            height: calc(100vh - 110px);
+            overflow: auto;
+            margin: 20px 0;
+
+            @include md {
+                height: calc(100vh - 160px);
+            }
+
+            .search-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+
+                .img {
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    width: 60px;
+                    height: 60px;
+                    flex-shrink: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                        object-fit: contain;
+
+                    }
+                }
+
+                .details {
+                    flex: 1;
+
+                    overflow: hidden;
+
+                    .name {
+                        font-size: 16px;
+                        font-weight: 600;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-bottom: 4px;
+
+                    }
+
+                    .desc {
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, 0.5);
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes searchwindow {
+    0% {
+        transform: translate(100%);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
